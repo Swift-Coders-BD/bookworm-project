@@ -106,7 +106,7 @@ const Header = () => {
               <ul class="absolute hidden group-hover:block text-gray-700 lg:pt-5">
                 <li class="">
                   <a
-                    class="rounded-t bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap"
+                    class="rounded-t bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap border-b-2 border-gray-300"
                     href="#"
                   >
                     Story books
@@ -114,7 +114,7 @@ const Header = () => {
                 </li>
                 <li class="">
                   <a
-                    class="bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap"
+                    class="bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap border-b-2 border-gray-300"
                     href="#"
                   >
                     Nobel books
@@ -122,7 +122,7 @@ const Header = () => {
                 </li>
                 <li class="">
                   <a
-                    class="rounded-b bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap"
+                    class="rounded-b bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap border-b-2 border-gray-300"
                     href="#"
                   >
                     Text books
