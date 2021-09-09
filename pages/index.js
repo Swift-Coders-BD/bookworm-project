@@ -8,6 +8,7 @@ import Authors from "../components/Authors/Authors";
 import UnreleasedBooks from "../components/UnreleasedBooks/UnreleasedBooks";
 import TopRatedCarousel from "../components/TopRatedCarousel";
 
+
 export default function Home() {
   return (
     <div>
@@ -35,6 +36,10 @@ export default function Home() {
 
       {/* apel */}
       <Authors />
+
+      {/* jahid */}
+      <Partnered />
+
     </div>
   );
 }
