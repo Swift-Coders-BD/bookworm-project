@@ -2,8 +2,8 @@ import React from "react";
 
 const Partnered = () => {
   return (
-    <div className="w-full bg-blue-400 pt-24 pb-14">
-      <h1 className="text-center font-bold text-4xl pt-5 text-white mb-14">
+    <div className="w-full bg-blue-400 pt-5 pb-14">
+      <h1 className="text-center font-bold text-4xl  text-white mb-14">
         Some of Publisher we partnered for
       </h1>
       <div className="px-2">

@@ -16,10 +16,8 @@ const Header = () => {
   }, []);
   return (
     <>
-      {/* flex items-center bg-gray-200 p-3 flex-wrap lg:px-20 */}
-
       <nav
-        className={`fixed w-full flex items-center p-3 flex-wrap lg:px-20 ${
+        className={`z-40 fixed w-full flex items-center p-3 flex-wrap lg:px-20 ${
           navbar ? "bg-blue-300" : "bg-gray-200"
         }`}
       >
@@ -56,7 +54,6 @@ const Header = () => {
           </svg>
         </button>
         <div
-          // hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto
           className={`${
             showMenu === false ? "hidden" : ""
           } top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto`}
@@ -146,7 +143,6 @@ const Header = () => {
             </a>
             <a
               href="#"
-              // className="lg:inline-flex lg:w-auto w-10 px-6 text-gray-800 rounded-full   cursor-pointer tracking-wider bg-red-400 border-2 hover:bg-red-500 hover:text-white items-center  p-2 font-bold"
               className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-600 font-bold items-center justify-center hover:hover:bg-red-500 hover:text-white"
             >
               <span>Login</span>
