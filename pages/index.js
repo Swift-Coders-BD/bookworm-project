@@ -7,7 +7,7 @@ import Categories from "../components/Categories";
 import Authors from "../components/Authors/Authors";
 import UnreleasedBooks from "../components/UnreleasedBooks/UnreleasedBooks";
 import TopRatedCarousel from "../components/TopRatedCarousel";
-
+import ScrolledTop from "../components/ScrolledTop/ScrolledTop";
 
 export default function Home() {
   return (
@@ -34,12 +34,14 @@ export default function Home() {
       {/* opu */}
       <Blogs />
 
+      {/* jahid */}
+      <Partnered />
+
       {/* apel */}
       <Authors />
 
       {/* jahid */}
       <Partnered />
-
     </div>
   );
 }

@@ -84,7 +84,7 @@ const Header = () => {
             {/* this is dropdown */}
             {/* <div className="group inline-block relative">
               <div className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-600 font-bold items-center justify-center hover:hover:bg-red-500 hover:text-white">
-                <span class="mr-1">Categories</span>
+                <span className="mr-1">Categories</span>
                 <svg
                   className="fill-current h-4 w-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const Header = () => {
                 </svg>
               </div>
               <ul className="absolute hidden group-hover:block text-gray-700 lg:pt-5">
-                <li class="">
+                <li className="">
                   <a
                     className="rounded-t bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap"
                     href="#"
@@ -110,7 +110,7 @@ const Header = () => {
                     Nobel books
                   </a>
                 </li>
-                <li class="">
+                <li className="">
                   <a
                     className="rounded-b bg-gray-200 text-gray-600 hover:hover:bg-red-500 hover:text-white py-3 px-24 block whitespace-no-wrap"
                     href="#"
