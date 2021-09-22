@@ -1,8 +1,6 @@
 import Link from "next/link";
 import ScrolledTop from "../components/ScrolledTop/ScrolledTop";
-// import LiveChat from "../components/LiveChat/LiveChat";
-// import ReactDOM from "react-dom";
-// import MessengerCustomerChat from "react-messenger-customer-chat";
+import LiveChat from "../components/LiveChat/LiveChat";
 
 const Footer = () => {
   return (
@@ -141,12 +139,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <LiveChat /> */}
-      {/* <MessengerCustomerChat
-        pageId="100961108288258"
-        appId="155546436606054"
-        htmlRef="<REF_STRING>"
-      /> */}
+      <LiveChat />
     </footer>
   );
 };

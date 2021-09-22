@@ -11,57 +11,57 @@ import HeaderCarousel from "../components/HeaderCarousel/HeaderCarousel";
 
 // fetch books
 export async function getStaticProps() {
-	const [bestSellerBooksRes, foreignBooksRes] = await Promise.all([
-		fetch("https://bookworm-backend.vercel.app/books/best-seller-books"),
-		fetch("https://bookworm-backend.vercel.app/books/foreign-books"),
-	]);
-	const [bestSellerBook, foreignBooks] = await Promise.all([
-		bestSellerBooksRes.json(),
-		foreignBooksRes.json(),
-	]);
-	return { props: { bestSellerBook, foreignBooks } };
+  const [bestSellerBooksRes, foreignBooksRes] = await Promise.all([
+    fetch("https://bookworm-backend.vercel.app/books/best-seller-books"),
+    fetch("https://bookworm-backend.vercel.app/books/foreign-books"),
+  ]);
+  const [bestSellerBook, foreignBooks] = await Promise.all([
+    bestSellerBooksRes.json(),
+    foreignBooksRes.json(),
+  ]);
+  return { props: { bestSellerBook, foreignBooks } };
 }
 
 export default function Home({ bestSellerBook, foreignBooks }) {
-	return (
-		<div>
-			<Head>
-				<title>Bookworm</title>
-				<link rel="icon" href="/favicon.ico" />
-				<meta
-					name="bookworm"
-					content="Bookworm is book library for book lovers"
-				/>
-			</Head>
-			{/* Google font */}
-			<style jsx global>{`
-				html,
-				body {
-					font-family: "Roboto", sans-serif;
-				}
-			`}</style>
-			{/* Google font */}
+  return (
+    <div>
+      <Head>
+        <title>Bookworm</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="bookworm"
+          content="Bookworm is book library for book lovers"
+        />
+      </Head>
+      {/* Google font */}
+      <style jsx global>{`
+        html,
+        body {
+          font-family: "Roboto", sans-serif;
+        }
+      `}</style>
+      {/* Google font */}
 
-			{/* apel */}
-			<HeaderCarousel />
+      {/* apel */}
+      <HeaderCarousel />
 
-			{/* apel */}
-			<BestSeller books={bestSellerBook} />
+      {/* apel */}
+      <BestSeller books={bestSellerBook} />
 
-			{/* opu */}
-			<ForeignBooks books={foreignBooks} />
+      {/* opu */}
+      <ForeignBooks books={foreignBooks} />
 
-			{/* apel */}
-			<UnreleasedBooks />
+      {/* apel */}
+      <UnreleasedBooks />
 
-			{/* samiha */}
-			<Categories />
+      {/* samiha */}
+      <Categories />
 
-			{/* opu */}
-			<Blogs />
+      {/* opu */}
+      <Blogs />
 
-			{/* apel */}
-			<Authors />
-		</div>
-	);
+      {/* apel */}
+      <Authors />
+    </div>
+  );
 }
