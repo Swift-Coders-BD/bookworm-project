@@ -4,6 +4,7 @@ import { createContext, useState } from "react";
 import AuthProvider from "../contexts/AuthContext";
 import { DashboardProvider } from "../contexts/dashboardContext";
 
+
 export const CartContext = createContext();
 export const BlogContext = createContext();
 function MyApp({ Component, pageProps }) {
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }) {
             <Layout>
               <Component {...pageProps} />
             </Layout>
+            
           </CartContext.Provider>
         </BlogContext.Provider>
       </DashboardProvider>

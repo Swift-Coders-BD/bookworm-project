@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import HeaderCarousel from "../components/HeaderCarousel/HeaderCarousel";
 import MixedBooks from "../components/MixedBooks/MixedBooks";
 
+
 // fetch books
 export async function getStaticProps() {
 	const [
